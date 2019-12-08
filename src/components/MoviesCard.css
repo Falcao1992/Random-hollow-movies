@@ -1,0 +1,46 @@
+.cardBigContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    
+}
+
+.cardImg {
+    width: 100%;
+}
+
+.cardImg:hover {
+     transform: scale(1.2);
+}
+
+.cardTitle {
+    font-size: 1.3rem;
+    font-weight: 700;
+    
+}
+
+@media (min-width: 500px) {
+    .cardBigContainer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .cardContainer {
+        width: 33%;
+        padding: 0;
+    }
+}
+
+@media (min-width: 800px) {
+    .cardBigContainer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .cardContainer {
+        width: 14%;
+        padding: 0 
+    }
+}

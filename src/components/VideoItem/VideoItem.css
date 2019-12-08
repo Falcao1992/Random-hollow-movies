@@ -1,0 +1,28 @@
+.videoItem {
+    padding-top: 3%;
+    display: flex ;
+    cursor: pointer;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.video-item__header{
+    color:red;
+    margin-bottom: 5%;
+    font-family: 'Jolly Lodger', cursive;
+
+}
+
+iframe{
+    width: 100%;
+}
+.VideoItem__ui_image{
+    border-radius: 5%;
+    box-shadow: 2px 5px 15px red;
+}
+@media screen and (min-width : 1100 px){
+    .VideoItem__ui_image{
+        height: 250px;
+}
+}

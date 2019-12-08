@@ -1,0 +1,70 @@
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+.switch {
+  position: absolute;
+  left: -9999px;
+}
+.container{
+    margin-right: 20%;
+
+}
+.switch_label {
+  display: block;
+  position: relative;
+  margin: 20px;
+  padding: 5% 50% 5% 40%;
+  border: 3px solid #fff;
+  border-radius: 100px;
+  color: #fff;
+  font-size: 4vmin;
+  background-color: #130701;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color .2s, box-shadow .2s;
+}
+
+.switch_label::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+  width: 15px;
+  border: 0  rgba(90, 223, 13, 0);
+  border-radius: 100px;
+  transition: background-color .2s;
+}
+
+.switch_label:first-of-type {
+  transform: translateX(-40px);
+}
+
+.switch_label:last-of-type {
+  transform: translateX(40px);
+}
+
+.switch_label:hover, .switch:focus + .switch_label {
+  box-shadow: 0 0 20px rgba(141, 60, 60, 0.6);
+}
+
+.switch:checked + .switch_label {
+  background-color: #e45706;
+}
+
+.switch:checked + .switch_label::before {
+  border: 0  rgba(90, 223, 13, 0);
+}
+
+@media (min-width:700px){
+  .switch_label {
+    padding: 5% 90% 5% 40%;
+  }
+}
